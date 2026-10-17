@@ -1,4 +1,4 @@
 # PizuPDF — build do wdrożenia
 
-Automatycznie generowany build aplikacji PizuPDF (wersja 1.4.4).
+Automatycznie generowany build aplikacji PizuPDF (wersja 1.5.0).
 Nie edytuj ręcznie — pliki są nadpisywane przy każdym wdrożeniu.

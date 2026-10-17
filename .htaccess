@@ -1,8 +1,16 @@
 # PizuPDF — Apache config for shared hosting
 
-# Force HTTPS
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # pdf.ptaszynski.pl (and the www. variants) share this folder with
+  # pdf.pizu.pl, so the move to the new address has to live here — every
+  # deploy replaces this file, a redirect set in cPanel would be wiped
+  RewriteCond %{HTTP_HOST} ^(www\.)?pdf\.ptaszynski\.pl$ [NC,OR]
+  RewriteCond %{HTTP_HOST} ^www\.pdf\.pizu\.pl$ [NC]
+  RewriteRule ^ https://pdf.pizu.pl%{REQUEST_URI} [R=301,L]
+
+  # Force HTTPS
   RewriteCond %{HTTPS} !=on
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
