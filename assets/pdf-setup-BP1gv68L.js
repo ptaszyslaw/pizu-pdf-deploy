@@ -1,1 +1,0 @@
-import{a as e,n as t,t as n}from"./pdf-setup-Dt-J3_TP.js";n();export{t as pdfjsDocParams,e as pdfjsLib};
