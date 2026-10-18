@@ -17,6 +17,8 @@
 
 # Module JS workers require a JavaScript MIME type
 AddType application/javascript .mjs
+# pdf.js decoders (pdfjs/wasm) — the server sent them with no type at all
+AddType application/wasm .wasm
 
 <IfModule mod_headers.c>
   # index.html must always revalidate, or a redeploy white-screens cached visitors
@@ -26,5 +28,17 @@ AddType application/javascript .mjs
   # Vite-hashed assets are immutable — cache aggressively
   <FilesMatch "-[A-Za-z0-9_-]{8,}\.(js|mjs|css|ttf|woff2?)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Security headers on every response
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "DENY"
+  # The page's CSP: scripts/deploy.mjs fills in the policy from index.html's
+  # <meta> plus frame-ancestors (a <meta> can't carry it). Only on HTML —
+  # workers take their CSP from their own response, and pdf.js / Tesseract
+  # compile WebAssembly there, which this page policy doesn't allow.
+  <FilesMatch "\.html$">
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'"
   </FilesMatch>
 </IfModule>

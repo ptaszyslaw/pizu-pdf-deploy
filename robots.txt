@@ -1,0 +1,5 @@
+# PizuPDF — strona może być w całości indeksowana
+User-agent: *
+Allow: /
+
+Sitemap: https://pdf.pizu.pl/sitemap.xml
