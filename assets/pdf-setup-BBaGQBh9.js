@@ -1,1 +1,0 @@
-import{a as e,n as t,t as n}from"./pdf-setup-Vf4hElN_.js";n();export{t as pdfjsDocParams,e as pdfjsLib};

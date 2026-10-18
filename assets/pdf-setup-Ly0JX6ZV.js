@@ -1,0 +1,1 @@
+import{n as e,o as t,t as n}from"./pdf-setup-CoU8aqZ3.js";n();export{e as pdfjsDocParams,t as pdfjsLib};
