@@ -58,7 +58,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.`},{name:`@pdf-lib/fontkit`,version:`1.1.1`,license:`MIT`,homepage:`https://github.com/Hopding/fontkit`,text:`Licencja: MIT. Pełny tekst licencji dostępny w pakiecie npm "@pdf-lib/fontkit" oraz w repozytorium projektu.`},{name:`pdfjs-dist`,version:`5.6.205`,license:`Apache-2.0`,homepage:`https://mozilla.github.io/pdf.js/`,text:`Apache License
+SOFTWARE.`},{name:`@pdf-lib/fontkit`,version:`1.1.1`,license:`MIT`,homepage:`https://github.com/Hopding/fontkit`,text:`Licencja: MIT. Pełny tekst licencji dostępny w pakiecie npm "@pdf-lib/fontkit" oraz w repozytorium projektu.`},{name:`pdfjs-dist`,version:`6.4.299`,license:`Apache-2.0`,homepage:`https://mozilla.github.io/pdf.js/`,text:`Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -233,7 +233,7 @@ SOFTWARE.`},{name:`@pdf-lib/fontkit`,version:`1.1.1`,license:`MIT`,homepage:`htt
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
-   END OF TERMS AND CONDITIONS`},{name:`mammoth`,version:`1.12.0`,license:`BSD-2-Clause`,homepage:``,text:`Copyright (c) 2013, Michael Williamson
+   END OF TERMS AND CONDITIONS`},{name:`mammoth`,version:`1.13.0`,license:`BSD-2-Clause`,homepage:``,text:`Copyright (c) 2013, Michael Williamson
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -254,7 +254,7 @@ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.`},{name:`docx`,version:`9.6.1`,license:`MIT`,homepage:`https://docx.js.org`,text:`The MIT License (MIT)
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.`},{name:`docx`,version:`9.12.0`,license:`MIT`,homepage:`https://docx.js.org`,text:`The MIT License (MIT)
 
 Copyright (c) 2016 Dolan
 
