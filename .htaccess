@@ -3,16 +3,17 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # pdf.ptaszynski.pl (and the www. variants) share this folder with
-  # pdf.pizu.pl, so the move to the new address has to live here — every
-  # deploy replaces this file, a redirect set in cPanel would be wiped
-  RewriteCond %{HTTP_HOST} ^(www\.)?pdf\.ptaszynski\.pl$ [NC,OR]
-  RewriteCond %{HTTP_HOST} ^www\.pdf\.pizu\.pl$ [NC]
-  RewriteRule ^ https://pdf.pizu.pl%{REQUEST_URI} [R=301,L]
-
-  # Force HTTPS
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  # One address: everything but https://pdf.pizu.pl that reaches this folder
+  # (http, www.pdf.pizu.pl, ptasior.hostilla.pl/pdf/, the old pdf.ptaszynski.pl
+  # if it ever points here again) gets a single 301 to https://pdf.pizu.pl,
+  # path and query kept. Path from $1 (relative to this folder), not
+  # %{REQUEST_URI}, so ptasior.hostilla.pl/pdf/x lands on /x; without NE Apache
+  # encodes spaces and % in the target. /.well-known stays put for AutoSSL.
+  # Lives here, not in cPanel "Redirects" — every deploy replaces this file.
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} !^pdf\.pizu\.pl\.?(?::[0-9]+)?$ [NC]
+  RewriteRule ^(.*)$ https://pdf.pizu.pl/$1 [R=301,L]
 </IfModule>
 
 # Module JS workers require a JavaScript MIME type
