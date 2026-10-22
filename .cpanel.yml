@@ -4,6 +4,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=$HOME/public_html/pdf/
     - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R .htaccess 404.css 404.html assets edytuj-pdf faktura-xml-na-pdf favicon.png index.html kompresuj-pdf obraz-na-pdf og-image.png pdf-na-obraz pdf-na-word pdfjs podpisz-pdf podziel-pdf robots.txt scal-pdf settings-init.js sitemap.xml tesseract word-na-pdf zamaz-dane-w-pdf $DEPLOYPATH
+    - /bin/cp -R .htaccess 13fb410abf564564a5251e613378cbf2.txt 404.css 404.html assets edytuj-pdf faktura-xml-na-pdf favicon.png index.html kompresuj-pdf obraz-na-pdf og-image.png pdf-na-obraz pdf-na-word pdfjs podpisz-pdf podziel-pdf robots.txt scal-pdf settings-init.js sitemap.xml tesseract word-na-pdf zamaz-dane-w-pdf $DEPLOYPATH
     - /bin/mkdir -p $HOME/public_html/pizupdf/
     - /bin/cp redirect-pizupdf/.htaccess $HOME/public_html/pizupdf/
