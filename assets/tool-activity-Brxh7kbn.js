@@ -1,1 +1,0 @@
-import{n as e,o as t}from"./chunk-zsgVPwQN.js";import{a as n,c as r,lt as i}from"./Toast-qoD9nGQ7.js";function a(){return(0,s.useContext)(c)}function o(e){let t=a(),r=(0,s.useRef)(e);r.current=e,(0,s.useEffect)(()=>{if(!t)return;let e=n();e&&e.length>0&&r.current(e)},[t])}var s,c,l=e((()=>{s=t(i()),r(),c=(0,s.createContext)(!0)}));export{l as n,o as r,c as t};
