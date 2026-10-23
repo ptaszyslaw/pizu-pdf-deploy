@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self' https://o4512300568477696.ingest.de.sentry.io; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="description" content="Odczytaj tekst z PDF i zapisz go jako TXT w UTF-8 albo skopiuj do schowka. Wybierz separator stron. Lokalnie, bez wysyłania pliku na serwer." />
+    <link rel="canonical" href="https://pdf.pizu.pl/pdf-na-txt/" />
+    <!-- link previews: scripts/tool-pages.mjs sets og:title, og:description and og:url for every tool page;
+         the image is shared (pizu-pl: scripts/og-image-tool.html → node scripts/og-image.mjs) -->
+    <meta property="og:title" content="PDF na tekst (TXT) — odczytaj i skopiuj tekst | PizuPDF" />
+    <meta property="og:description" content="Odczytaj tekst z PDF i zapisz go jako TXT w UTF-8 albo skopiuj do schowka. Wybierz separator stron. Lokalnie, bez wysyłania pliku na serwer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pdf.pizu.pl/pdf-na-txt/" />
+    <meta property="og:site_name" content="PizuPDF" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:image" content="https://pdf.pizu.pl/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ptak Pizu i napis: PizuPDF — narzędzia, które nie wysyłają Twoich plików. Scal, kompresuj, podpisz." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <!-- applies saved theme / contrast / text size before the first paint -->
+    <script src="./settings-init.js"></script>
+    <title>PDF na tekst (TXT) — odczytaj i skopiuj tekst | PizuPDF</title>
+    <script type="module" crossorigin src="./assets/index-D1cqaOy1.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/chunk-zsgVPwQN.js">
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-D7IdkHhf.js">
+    <link rel="modulepreload" crossorigin href="./assets/image-orientation-CbhwxETc.js">
+    <link rel="modulepreload" crossorigin href="./assets/web-api-ONKRvPSw.js">
+    <link rel="modulepreload" crossorigin href="./assets/recents-DOaKfl25.js">
+    <link rel="modulepreload" crossorigin href="./assets/Toast-Cj1oflaS.js">
+    <link rel="modulepreload" crossorigin href="./assets/env-Cj5UkmZ6.js">
+    <link rel="modulepreload" crossorigin href="./assets/routes-rpIA64H2.js">
+    <link rel="modulepreload" crossorigin href="./assets/tool-activity-5GrRwRjc.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-XQ7lx9uz.css">
+    <script type="application/ld+json" id="page-structured-data">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"PDF na tekst (TXT)","description":"Odczytaj tekst z PDF i zapisz go jako TXT w UTF-8 albo skopiuj do schowka. Wybierz separator stron. Lokalnie, bez wysyłania pliku na serwer.","applicationCategory":"UtilitiesApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://pdf.pizu.pl/pdf-na-txt/"},{"@type":"FAQPage","url":"https://pdf.pizu.pl/pdf-na-txt/","mainEntity":[{"@type":"Question","name":"Czy narzędzie odczyta tekst ze skanu?","acceptedAnswer":{"@type":"Answer","text":"Nie. Strony bez warstwy tekstu są wskazane w wyniku. Użyj najpierw narzędzia „OCR PDF”, a następnie odczytaj tekst z otrzymanego pliku."}},{"@type":"Question","name":"Czy zachowa się kolejność akapitów i tabel?","acceptedAnswer":{"@type":"Answer","text":"Narzędzie korzysta z kolejności tekstu odczytanej przez pdf.js i odstępów między liniami. Przy złożonych tabelach lub wielu kolumnach kolejność może wymagać ręcznej poprawki. Formatowanie, grafika i układ stron nie są przenoszone do TXT."}},{"@type":"Question","name":"Czy plik i skopiowany tekst trafiają na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Odczyt, przygotowanie TXT i kopiowanie do schowka odbywają się na Twoim urządzeniu."}}]}]}</script>
+  </head>
+  <body>
+    <div id="root"><main id="main" data-static-page class="flex-1 overflow-y-auto focus:outline-none">
+      <header class="max-w-3xl mx-auto px-4 sm:px-6 pt-4">
+        <a href="/" class="text-sm text-brand">PizuPDF — wszystkie narzędzia PDF</a>
+        <h1 class="mt-4 text-xl md:text-2xl font-bold text-ink">PDF na tekst (TXT)</h1>
+      </header>
+      <section aria-labelledby="page-info" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
+        <h2 id="page-info" class="text-lg font-bold text-ink">Jak to działa</h2>
+        <p class="mt-2">Zapisujesz tekst PDF jako zwykły plik TXT z polskimi znakami. Narzędzie zachowuje podział na strony oraz rozpoznaje odstępy między akapitami. Odczyt odbywa się na Twoim urządzeniu, bez wysyłania pliku.</p>
+        <ol class="mt-3 space-y-1.5 list-decimal pl-5">
+          <li>Wczytaj PDF i kliknij „Odczytaj tekst”.</li>
+          <li>Wybierz separator stron: znak podziału strony, pustą linię albo numer strony. Sprawdź tekst w podglądzie.</li>
+          <li>Zapisz TXT w kodowaniu UTF-8 albo skopiuj tekst do schowka.</li>
+        </ol>
+        <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
+        <dl class="mt-2 divide-y divide-gray-200">
+          <div class="py-3"><dt class="font-semibold text-ink">Czy narzędzie odczyta tekst ze skanu?</dt><dd class="mt-1">Nie. Strony bez warstwy tekstu są wskazane w wyniku. Użyj najpierw narzędzia „OCR PDF”, a następnie odczytaj tekst z otrzymanego pliku.</dd></div>
+          <div class="py-3"><dt class="font-semibold text-ink">Czy zachowa się kolejność akapitów i tabel?</dt><dd class="mt-1">Narzędzie korzysta z kolejności tekstu odczytanej przez pdf.js i odstępów między liniami. Przy złożonych tabelach lub wielu kolumnach kolejność może wymagać ręcznej poprawki. Formatowanie, grafika i układ stron nie są przenoszone do TXT.</dd></div>
+          <div class="py-3"><dt class="font-semibold text-ink">Czy plik i skopiowany tekst trafiają na serwer?</dt><dd class="mt-1">Nie. Odczyt, przygotowanie TXT i kopiowanie do schowka odbywają się na Twoim urządzeniu.</dd></div>
+        </dl>
+      </section>
+    </main></div>
+  </body>
+</html>
