@@ -1,0 +1,1 @@
+import{n as e,o as t}from"./chunk-zsgVPwQN.js";import{_t as n,a as r,n as i}from"./recents-auBbKtzt.js";function a(){return(0,s.useContext)(c)}function o(e){let t=a(),n=(0,s.useRef)(e);n.current=e,(0,s.useEffect)(()=>{if(!t)return;let e=i();e&&e.length>0&&n.current(e)},[t])}var s,c,l=e((()=>{s=t(n()),r(),c=(0,s.createContext)(!0)}));export{l as n,o as r,c as t};
