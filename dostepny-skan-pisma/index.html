@@ -2,52 +2,52 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <base href="/" />
+    <base href="/pdf/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self' https://o4512300568477696.ingest.de.sentry.io; base-uri 'self'; form-action 'none'"
     />
     <meta name="description" content="Połącz skan podpisanego pisma z oryginałem z Worda: widać skan z podpisem, a czytnik ekranu czyta tekst oryginału. Bez OCR, lokalnie w przeglądarce." />
-    <link rel="canonical" href="https://pdf.pizu.pl/dostepny-skan-pisma/" />
+    <link rel="canonical" href="https://pizu.pl/pdf/dostepny-skan-pisma/" />
     <!-- link previews: scripts/tool-pages.mjs sets og:title, og:description and og:url for every tool page;
          the image is shared (pizu-pl: scripts/og-image-tool.html → node scripts/og-image.mjs) -->
     <meta property="og:title" content="Dostępny skan pisma z podpisem (WCAG) | PizuPDF" />
     <meta property="og:description" content="Połącz skan podpisanego pisma z oryginałem z Worda: widać skan z podpisem, a czytnik ekranu czyta tekst oryginału. Bez OCR, lokalnie w przeglądarce." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pdf.pizu.pl/dostepny-skan-pisma/" />
+    <meta property="og:url" content="https://pizu.pl/pdf/dostepny-skan-pisma/" />
     <meta property="og:site_name" content="PizuPDF" />
     <meta property="og:locale" content="pl_PL" />
-    <meta property="og:image" content="https://pdf.pizu.pl/og-image.png" />
+    <meta property="og:image" content="https://pizu.pl/pdf/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Ptak Pizu i napis: PizuPDF — narzędzia, które nie wysyłają Twoich plików. Scal, kompresuj, podpisz." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="./favicon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/pdf/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/pdf/apple-touch-icon.png" />
     <!-- applies saved theme / contrast / text size before the first paint -->
     <script src="./settings-init.js"></script>
     <title>Dostępny skan pisma z podpisem (WCAG) | PizuPDF</title>
-    <script type="module" crossorigin src="./assets/index-BYGJC_Cs.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/chunk-zsgVPwQN.js">
-    <link rel="modulepreload" crossorigin href="./assets/preload-helper-Dkne9qBW.js">
-    <link rel="modulepreload" crossorigin href="./assets/image-orientation-Am5N-sAW.js">
-    <link rel="modulepreload" crossorigin href="./assets/web-api-CPa9c6t7.js">
-    <link rel="modulepreload" crossorigin href="./assets/recents-DQJ_d9x9.js">
-    <link rel="modulepreload" crossorigin href="./assets/Toast-nXc2T_Va.js">
-    <link rel="modulepreload" crossorigin href="./assets/env-Cj5UkmZ6.js">
-    <link rel="modulepreload" crossorigin href="./assets/routes-K5dVKWgX.js">
-    <link rel="modulepreload" crossorigin href="./assets/pwa-CgaPolpA.js">
-    <link rel="modulepreload" crossorigin href="./assets/tool-activity-y5BORXCY.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-Dd7aFFxh.css">
-    <script type="application/ld+json" id="page-structured-data">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Dostępny skan pisma — skan z podpisem na tekście PDF","description":"Połącz skan podpisanego pisma z oryginałem z Worda: widać skan z podpisem, a czytnik ekranu czyta tekst oryginału. Bez OCR, lokalnie w przeglądarce.","applicationCategory":"UtilitiesApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://pdf.pizu.pl/dostepny-skan-pisma/"},{"@type":"FAQPage","url":"https://pdf.pizu.pl/dostepny-skan-pisma/","mainEntity":[{"@type":"Question","name":"Po co to, skoro jest OCR?","acceptedAnswer":{"@type":"Answer","text":"OCR zgaduje tekst z obrazu: myli polskie znaki, rozbija tabele i nie odtwarza nagłówków. Tu tekst pochodzi z oryginalnego pliku, więc jest bezbłędny i ma strukturę, z której korzystają czytniki ekranu. Gdy nie masz oryginału, użyj narzędzia OCR PDF."}},{"@type":"Question","name":"Jak zapisać PDF z tagami?","acceptedAnswer":{"@type":"Answer","text":"W Wordzie: Plik → Zapisz jako → PDF → Opcje → zaznacz „Tagi struktury dokumentu dla ułatwień dostępu”. W LibreOffice: Plik → Eksportuj jako PDF → zaznacz „Uniwersalna dostępność (PDF/UA)”. Narzędzie ostrzeże, gdy PDF nie ma tagów."}},{"@type":"Question","name":"Czy wynik spełnia WCAG i PDF/UA?","acceptedAnswer":{"@type":"Answer","text":"Narzędzie zachowuje tagi, tytuł i strukturę oryginału, a skan oznacza jako element dekoracyjny, który czytniki ekranu pomijają. Wynik jest tak dostępny jak PDF z tekstem: jeśli oryginał przechodzi kontrolę PDF/UA, wynik też powinien. Przed publikacją sprawdź go np. w PAC lub veraPDF."}},{"@type":"Question","name":"Co z podpisem — czy czytnik ekranu o nim powie?","acceptedAnswer":{"@type":"Answer","text":"Tak, jeśli dodasz informację o podpisie. Trafia ona jako niewidoczny akapit na koniec kolejności czytania, np. „Dokument podpisany odręcznie przez Jana Kowalskiego”."}},{"@type":"Question","name":"Czy narzędzie sprawdza, czy skan i tekst to ta sama wersja pisma?","acceptedAnswer":{"@type":"Answer","text":"Pokazuje zgodność skanu z tekstem i ostrzega, gdy skan wygląda na inną stronę lub inny dokument. Drobnych zmian, np. jednego słowa, nie wykryje — sprawdź, czy skan przedstawia tę samą wersję pisma co PDF z tekstem."}},{"@type":"Question","name":"Czy pliki trafiają na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Dopasowanie i tworzenie PDF odbywają się w Twojej przeglądarce. To ważne przy pismach z danymi osobowymi i tajemnicą zawodową."}}]}]}</script>
+    <script type="module" crossorigin src="/pdf/assets/index-Cat6fF6k.js"></script>
+    <link rel="modulepreload" crossorigin href="/pdf/assets/chunk-zsgVPwQN.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/preload-helper-CTXC5jDH.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/image-orientation-Am5N-sAW.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/web-api-DWMwD5kZ.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/recents-DQJ_d9x9.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/Toast-nXc2T_Va.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/env-Cj5UkmZ6.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/routes-DVqfvgbq.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/pwa-Bo2xJLW3.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/tool-activity-y5BORXCY.js">
+    <link rel="stylesheet" crossorigin href="/pdf/assets/index-Dd7aFFxh.css">
+    <script type="application/ld+json" id="page-structured-data">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Dostępny skan pisma — skan z podpisem na tekście PDF","description":"Połącz skan podpisanego pisma z oryginałem z Worda: widać skan z podpisem, a czytnik ekranu czyta tekst oryginału. Bez OCR, lokalnie w przeglądarce.","applicationCategory":"UtilitiesApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://pizu.pl/pdf/dostepny-skan-pisma/"},{"@type":"FAQPage","url":"https://pizu.pl/pdf/dostepny-skan-pisma/","mainEntity":[{"@type":"Question","name":"Po co to, skoro jest OCR?","acceptedAnswer":{"@type":"Answer","text":"OCR zgaduje tekst z obrazu: myli polskie znaki, rozbija tabele i nie odtwarza nagłówków. Tu tekst pochodzi z oryginalnego pliku, więc jest bezbłędny i ma strukturę, z której korzystają czytniki ekranu. Gdy nie masz oryginału, użyj narzędzia OCR PDF."}},{"@type":"Question","name":"Jak zapisać PDF z tagami?","acceptedAnswer":{"@type":"Answer","text":"W Wordzie: Plik → Zapisz jako → PDF → Opcje → zaznacz „Tagi struktury dokumentu dla ułatwień dostępu”. W LibreOffice: Plik → Eksportuj jako PDF → zaznacz „Uniwersalna dostępność (PDF/UA)”. Narzędzie ostrzeże, gdy PDF nie ma tagów."}},{"@type":"Question","name":"Czy wynik spełnia WCAG i PDF/UA?","acceptedAnswer":{"@type":"Answer","text":"Narzędzie zachowuje tagi, tytuł i strukturę oryginału, a skan oznacza jako element dekoracyjny, który czytniki ekranu pomijają. Wynik jest tak dostępny jak PDF z tekstem: jeśli oryginał przechodzi kontrolę PDF/UA, wynik też powinien. Przed publikacją sprawdź go np. w PAC lub veraPDF."}},{"@type":"Question","name":"Co z podpisem — czy czytnik ekranu o nim powie?","acceptedAnswer":{"@type":"Answer","text":"Tak, jeśli dodasz informację o podpisie. Trafia ona jako niewidoczny akapit na koniec kolejności czytania, np. „Dokument podpisany odręcznie przez Jana Kowalskiego”."}},{"@type":"Question","name":"Czy narzędzie sprawdza, czy skan i tekst to ta sama wersja pisma?","acceptedAnswer":{"@type":"Answer","text":"Pokazuje zgodność skanu z tekstem i ostrzega, gdy skan wygląda na inną stronę lub inny dokument. Drobnych zmian, np. jednego słowa, nie wykryje — sprawdź, czy skan przedstawia tę samą wersję pisma co PDF z tekstem."}},{"@type":"Question","name":"Czy pliki trafiają na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Dopasowanie i tworzenie PDF odbywają się w Twojej przeglądarce. To ważne przy pismach z danymi osobowymi i tajemnicą zawodową."}}]}]}</script>
   </head>
   <body>
     <div id="root"><main id="main" data-static-page class="flex-1 overflow-y-auto focus:outline-none">
       <header class="max-w-3xl mx-auto px-4 sm:px-6 pt-4">
-        <a href="/" class="text-sm text-brand">PizuPDF — wszystkie narzędzia PDF</a>
+        <a href="/pdf/" class="text-sm text-brand">PizuPDF — wszystkie narzędzia PDF</a>
         <h1 class="mt-4 text-xl md:text-2xl font-bold text-ink">Dostępny skan pisma — skan z podpisem na tekście PDF</h1>
       </header>
       <section aria-labelledby="page-info" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
@@ -60,7 +60,7 @@
         </ol>
         <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
         <dl class="mt-2 divide-y divide-gray-200">
-          <div class="py-3"><dt class="font-semibold text-ink">Po co to, skoro jest OCR?</dt><dd class="mt-1">OCR zgaduje tekst z obrazu: myli polskie znaki, rozbija tabele i nie odtwarza nagłówków. Tu tekst pochodzi z oryginalnego pliku, więc jest bezbłędny i ma strukturę, z której korzystają czytniki ekranu. Gdy nie masz oryginału, użyj narzędzia <a class="text-brand underline" href="/ocr-pdf/">OCR PDF</a>.</dd></div>
+          <div class="py-3"><dt class="font-semibold text-ink">Po co to, skoro jest OCR?</dt><dd class="mt-1">OCR zgaduje tekst z obrazu: myli polskie znaki, rozbija tabele i nie odtwarza nagłówków. Tu tekst pochodzi z oryginalnego pliku, więc jest bezbłędny i ma strukturę, z której korzystają czytniki ekranu. Gdy nie masz oryginału, użyj narzędzia <a class="text-brand underline" href="/pdf/ocr-pdf/">OCR PDF</a>.</dd></div>
           <div class="py-3"><dt class="font-semibold text-ink">Jak zapisać PDF z tagami?</dt><dd class="mt-1">W Wordzie: Plik → Zapisz jako → PDF → Opcje → zaznacz „Tagi struktury dokumentu dla ułatwień dostępu”. W LibreOffice: Plik → Eksportuj jako PDF → zaznacz „Uniwersalna dostępność (PDF/UA)”. Narzędzie ostrzeże, gdy PDF nie ma tagów.</dd></div>
           <div class="py-3"><dt class="font-semibold text-ink">Czy wynik spełnia WCAG i PDF/UA?</dt><dd class="mt-1">Narzędzie zachowuje tagi, tytuł i strukturę oryginału, a skan oznacza jako element dekoracyjny, który czytniki ekranu pomijają. Wynik jest tak dostępny jak PDF z tekstem: jeśli oryginał przechodzi kontrolę PDF/UA, wynik też powinien. Przed publikacją sprawdź go np. w <a class="text-brand underline" href="https://pac.pdf-accessibility.org/" target="_blank" rel="noopener">PAC<span class="sr-only"> (otwiera się w nowej karcie)</span></a> lub <a class="text-brand underline" href="https://verapdf.org/" target="_blank" rel="noopener">veraPDF<span class="sr-only"> (otwiera się w nowej karcie)</span></a>.</dd></div>
           <div class="py-3"><dt class="font-semibold text-ink">Co z podpisem — czy czytnik ekranu o nim powie?</dt><dd class="mt-1">Tak, jeśli dodasz informację o podpisie. Trafia ona jako niewidoczny akapit na koniec kolejności czytania, np. „Dokument podpisany odręcznie przez Jana Kowalskiego”.</dd></div>
@@ -68,6 +68,6 @@
           <div class="py-3"><dt class="font-semibold text-ink">Czy pliki trafiają na serwer?</dt><dd class="mt-1">Nie. Dopasowanie i tworzenie PDF odbywają się w Twojej przeglądarce. To ważne przy pismach z danymi osobowymi i tajemnicą zawodową.</dd></div>
         </dl>
       </section>
-    </main></div>
+    </main></div>
   </body>
 </html>

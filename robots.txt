@@ -1,5 +1,2 @@
-# PizuPDF — strona może być w całości indeksowana
-User-agent: *
-Allow: /
-
-Sitemap: https://pdf.pizu.pl/sitemap.xml
+# Crawlers read robots.txt only from the domain root: https://pizu.pl/robots.txt
+# is maintained by the pizu-pl repository. This copy under /pdf/ is not consulted.

@@ -2,52 +2,52 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <base href="/" />
+    <base href="/pdf/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self' https://o4512300568477696.ingest.de.sentry.io; base-uri 'self'; form-action 'none'"
     />
     <meta name="description" content="Dodaj tekst do pliku PDF — np. uzupełnij formularz albo dopisz uwagę. W przeglądarce, bez wysyłania pliku na serwer." />
-    <link rel="canonical" href="https://pdf.pizu.pl/edytuj-pdf/" />
+    <link rel="canonical" href="https://pizu.pl/pdf/edytuj-pdf/" />
     <!-- link previews: scripts/tool-pages.mjs sets og:title, og:description and og:url for every tool page;
          the image is shared (pizu-pl: scripts/og-image-tool.html → node scripts/og-image.mjs) -->
     <meta property="og:title" content="Edytuj PDF — dodaj tekst do dokumentu | PizuPDF" />
     <meta property="og:description" content="Dodaj tekst do pliku PDF — np. uzupełnij formularz albo dopisz uwagę. W przeglądarce, bez wysyłania pliku na serwer." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pdf.pizu.pl/edytuj-pdf/" />
+    <meta property="og:url" content="https://pizu.pl/pdf/edytuj-pdf/" />
     <meta property="og:site_name" content="PizuPDF" />
     <meta property="og:locale" content="pl_PL" />
-    <meta property="og:image" content="https://pdf.pizu.pl/og-image.png" />
+    <meta property="og:image" content="https://pizu.pl/pdf/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Ptak Pizu i napis: PizuPDF — narzędzia, które nie wysyłają Twoich plików. Scal, kompresuj, podpisz." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/png" href="./favicon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/pdf/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/pdf/apple-touch-icon.png" />
     <!-- applies saved theme / contrast / text size before the first paint -->
     <script src="./settings-init.js"></script>
     <title>Edytuj PDF — dodaj tekst do dokumentu | PizuPDF</title>
-    <script type="module" crossorigin src="./assets/index-BYGJC_Cs.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/chunk-zsgVPwQN.js">
-    <link rel="modulepreload" crossorigin href="./assets/preload-helper-Dkne9qBW.js">
-    <link rel="modulepreload" crossorigin href="./assets/image-orientation-Am5N-sAW.js">
-    <link rel="modulepreload" crossorigin href="./assets/web-api-CPa9c6t7.js">
-    <link rel="modulepreload" crossorigin href="./assets/recents-DQJ_d9x9.js">
-    <link rel="modulepreload" crossorigin href="./assets/Toast-nXc2T_Va.js">
-    <link rel="modulepreload" crossorigin href="./assets/env-Cj5UkmZ6.js">
-    <link rel="modulepreload" crossorigin href="./assets/routes-K5dVKWgX.js">
-    <link rel="modulepreload" crossorigin href="./assets/pwa-CgaPolpA.js">
-    <link rel="modulepreload" crossorigin href="./assets/tool-activity-y5BORXCY.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-Dd7aFFxh.css">
-    <script type="application/ld+json" id="page-structured-data">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Edytuj PDF","description":"Dodaj tekst do pliku PDF — np. uzupełnij formularz albo dopisz uwagę. W przeglądarce, bez wysyłania pliku na serwer.","applicationCategory":"UtilitiesApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://pdf.pizu.pl/edytuj-pdf/"},{"@type":"FAQPage","url":"https://pdf.pizu.pl/edytuj-pdf/","mainEntity":[{"@type":"Question","name":"Czy zmienię tekst, który już jest w PDF?","acceptedAnswer":{"@type":"Answer","text":"Nie — narzędzie dodaje nowy tekst. Żeby trwale ukryć istniejącą treść, użyj narzędzia Zamaż dane w PDF."}},{"@type":"Question","name":"Czy plik trafia na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Edycja odbywa się w Twojej przeglądarce."}}]}]}</script>
+    <script type="module" crossorigin src="/pdf/assets/index-Cat6fF6k.js"></script>
+    <link rel="modulepreload" crossorigin href="/pdf/assets/chunk-zsgVPwQN.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/preload-helper-CTXC5jDH.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/image-orientation-Am5N-sAW.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/web-api-DWMwD5kZ.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/recents-DQJ_d9x9.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/Toast-nXc2T_Va.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/env-Cj5UkmZ6.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/routes-DVqfvgbq.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/pwa-Bo2xJLW3.js">
+    <link rel="modulepreload" crossorigin href="/pdf/assets/tool-activity-y5BORXCY.js">
+    <link rel="stylesheet" crossorigin href="/pdf/assets/index-Dd7aFFxh.css">
+    <script type="application/ld+json" id="page-structured-data">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Edytuj PDF","description":"Dodaj tekst do pliku PDF — np. uzupełnij formularz albo dopisz uwagę. W przeglądarce, bez wysyłania pliku na serwer.","applicationCategory":"UtilitiesApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://pizu.pl/pdf/edytuj-pdf/"},{"@type":"FAQPage","url":"https://pizu.pl/pdf/edytuj-pdf/","mainEntity":[{"@type":"Question","name":"Czy zmienię tekst, który już jest w PDF?","acceptedAnswer":{"@type":"Answer","text":"Nie — narzędzie dodaje nowy tekst. Żeby trwale ukryć istniejącą treść, użyj narzędzia Zamaż dane w PDF."}},{"@type":"Question","name":"Czy plik trafia na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Edycja odbywa się w Twojej przeglądarce."}}]}]}</script>
   </head>
   <body>
     <div id="root"><main id="main" data-static-page class="flex-1 overflow-y-auto focus:outline-none">
       <header class="max-w-3xl mx-auto px-4 sm:px-6 pt-4">
-        <a href="/" class="text-sm text-brand">PizuPDF — wszystkie narzędzia PDF</a>
+        <a href="/pdf/" class="text-sm text-brand">PizuPDF — wszystkie narzędzia PDF</a>
         <h1 class="mt-4 text-xl md:text-2xl font-bold text-ink">Edytuj PDF</h1>
       </header>
       <section aria-labelledby="page-info" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
@@ -60,10 +60,10 @@
         </ol>
         <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
         <dl class="mt-2 divide-y divide-gray-200">
-          <div class="py-3"><dt class="font-semibold text-ink">Czy zmienię tekst, który już jest w PDF?</dt><dd class="mt-1">Nie — narzędzie dodaje nowy tekst. Żeby trwale ukryć istniejącą treść, użyj narzędzia <a class="text-brand underline" href="/zamaz-dane-w-pdf/">Zamaż dane w PDF</a>.</dd></div>
+          <div class="py-3"><dt class="font-semibold text-ink">Czy zmienię tekst, który już jest w PDF?</dt><dd class="mt-1">Nie — narzędzie dodaje nowy tekst. Żeby trwale ukryć istniejącą treść, użyj narzędzia <a class="text-brand underline" href="/pdf/zamaz-dane-w-pdf/">Zamaż dane w PDF</a>.</dd></div>
           <div class="py-3"><dt class="font-semibold text-ink">Czy plik trafia na serwer?</dt><dd class="mt-1">Nie. Edycja odbywa się w Twojej przeglądarce.</dd></div>
         </dl>
       </section>
-    </main></div>
+    </main></div>
   </body>
 </html>
